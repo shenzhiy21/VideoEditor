@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/arrow-left.svg</file>
+        <file>res/arrow-right.svg</file>
+        <file>res/backward.svg</file>
+        <file>res/backward-step.svg</file>
+        <file>res/cart-plus.svg</file>
+        <file>res/code-merge.svg</file>
+        <file>res/forward.svg</file>
+        <file>res/forward-step.svg</file>
+        <file>res/pause.svg</file>
+        <file>res/play.svg</file>
+        <file>res/plus.svg</file>
+        <file>res/retweet.svg</file>
+        <file>res/scissors.svg</file>
+        <file>res/trash-can.svg</file>
+        <file>res/trash-can-arrow-up.svg</file>
+        <file>res/check.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="renameBtn">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>140</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="inputBtn">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>70</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeBtn">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>210</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>751</width>
+      <height>220</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="TimeLine" name="timeLine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>749</width>
+       <height>218</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="addBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="PreviewWindow" name="previewWin" native="true">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>55</y>
+      <width>400</width>
+      <height>225</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="MyPushButton" name="playpauseBtn">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="MySlider" name="slider">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>270</y>
+      <width>400</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cutBtn">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mergeBtn">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delBtn">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwardBtn">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backwardBtn">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>291</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="videoTab">
+     <attribute name="title">
+      <string>视频</string>
+     </attribute>
+     <widget class="QListWidget" name="videoList">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>291</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="imageTab">
+     <attribute name="title">
+      <string>图片</string>
+     </attribute>
+     <widget class="QListWidget" name="imageList">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>291</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="subtitleTab">
+     <attribute name="title">
+      <string>字幕</string>
+     </attribute>
+     <widget class="QListWidget" name="subtitleList">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>291</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="backwardFastBtn">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwardFastBtn">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toEndBtn">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toBeginBtn">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeLabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>300</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="inputMenu"/>
+    <addaction name="outputMenu"/>
+    <addaction name="delMenu"/>
+    <addaction name="renameMenu"/>
+   </widget>
+   <widget class="QMenu" name="videoMenu">
+    <property name="title">
+     <string>剪辑</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>特效</string>
+     </property>
+     <addaction name="fadeMenu"/>
+     <addaction name="moveMenu"/>
+     <addaction name="sizeMenu"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="videoCutMenu"/>
+   </widget>
+   <widget class="QMenu" name="timelineMenu">
+    <property name="title">
+     <string>时间轴</string>
+    </property>
+    <addaction name="addMenu"/>
+    <addaction name="rmvMenu"/>
+    <addaction name="splitMenu"/>
+    <addaction name="mergeMenu"/>
+    <addaction name="forwardMenu"/>
+    <addaction name="backwardMenu"/>
+   </widget>
+   <widget class="QMenu" name="previewMenu">
+    <property name="title">
+     <string>预览</string>
+    </property>
+    <addaction name="playpauseMenu"/>
+    <addaction name="stepbackMenu"/>
+    <addaction name="stepforthMenu"/>
+    <addaction name="toBeginMenu"/>
+    <addaction name="toEndMenu"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="videoMenu"/>
+   <addaction name="timelineMenu"/>
+   <addaction name="previewMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="inputMenu">
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </action>
+  <action name="outputMenu">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="videoCutMenu">
+   <property name="text">
+    <string>裁剪</string>
+   </property>
+  </action>
+  <action name="delMenu">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="renameMenu">
+   <property name="text">
+    <string>重命名</string>
+   </property>
+  </action>
+  <action name="addMenu">
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </action>
+  <action name="rmvMenu">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="splitMenu">
+   <property name="text">
+    <string>分割</string>
+   </property>
+  </action>
+  <action name="mergeMenu">
+   <property name="text">
+    <string>合并</string>
+   </property>
+  </action>
+  <action name="forwardMenu">
+   <property name="text">
+    <string>前移</string>
+   </property>
+  </action>
+  <action name="backwardMenu">
+   <property name="text">
+    <string>后移</string>
+   </property>
+  </action>
+  <action name="playpauseMenu">
+   <property name="text">
+    <string>播放/暂停</string>
+   </property>
+  </action>
+  <action name="stepbackMenu">
+   <property name="text">
+    <string>前移一帧</string>
+   </property>
+  </action>
+  <action name="stepforthMenu">
+   <property name="text">
+    <string>后移一帧</string>
+   </property>
+  </action>
+  <action name="toBeginMenu">
+   <property name="text">
+    <string>开始帧</string>
+   </property>
+  </action>
+  <action name="toEndMenu">
+   <property name="text">
+    <string>结束帧</string>
+   </property>
+  </action>
+  <action name="fadeMenu">
+   <property name="text">
+    <string>淡入淡出</string>
+   </property>
+  </action>
+  <action name="moveMenu">
+   <property name="text">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="sizeMenu">
+   <property name="text">
+    <string>缩放</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TimeLine</class>
+   <extends>QWidget</extends>
+   <header location="global">timeline.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PreviewWindow</class>
+   <extends>QWidget</extends>
+   <header>previewwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MySlider</class>
+   <extends>QSlider</extends>
+   <header>myslider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyPushButton</class>
+   <extends>QPushButton</extends>
+   <header>mypushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
